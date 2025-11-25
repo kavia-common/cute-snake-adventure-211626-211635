@@ -1,82 +1,52 @@
-# Lightweight React Template for KAVIA
+# Cute Snake Adventure (React)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A classic snake arcade game with a cute, child-friendly look, themed with "Ocean Professional" (blue primary + amber accents).
 
 ## Features
+- Smooth grid-based movement with arrow keys or WASD
+- Obstacles, growth on eating food, score and level
+- Start/Pause/Reset controls and speed selection
+- Ocean Professional theme (rounded corners, soft gradients, subtle shadows)
+- Accessible: ARIA roles for grid and controls
+- Local best score persistence
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Run locally
+- Node 16+ recommended
+- Install: `npm install`
+- Start dev server: `npm start`
+- Run tests: `npm test`
+- Build: `npm run build`
 
-## Getting Started
+Open http://localhost:3000
 
-In the project directory, you can run:
+## Controls
+- Move: Arrow keys or WASD
+- Start: Click "Start"
+- Pause: Click "Pause"
+- Reset: Click "Reset"
+- Speed: Slow/Normal/Fast toggles
 
-### `npm start`
+## Environment variables
+This frontend is self-contained and does not require backend connectivity. For completeness, a .env.example is provided with optional variables:
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- REACT_APP_API_BASE
+- REACT_APP_BACKEND_URL
+- REACT_APP_FRONTEND_URL
+- REACT_APP_WS_URL
+- REACT_APP_NODE_ENV
+- REACT_APP_NEXT_TELEMETRY_DISABLED
+- REACT_APP_ENABLE_SOURCE_MAPS
+- REACT_APP_PORT
+- REACT_APP_TRUST_PROXY
+- REACT_APP_LOG_LEVEL
+- REACT_APP_HEALTHCHECK_PATH
+- REACT_APP_FEATURE_FLAGS
+- REACT_APP_EXPERIMENTS_ENABLED
 
-### `npm test`
+## Project structure
+- src/App.js — main game logic and layout
+- src/theme.css — Ocean Professional theme
+- src/components/* — UI building blocks
+- src/utils/gameUtils.js — game utilities
 
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy and have fun! 🐍
